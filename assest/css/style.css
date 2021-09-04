@@ -16,7 +16,10 @@ body{
     font-family: 'Poppins', sans-serif;
 	overflow-x: hidden;
 }
-
+h1,h2,h3,h4,h5,h6,p{
+	padding: 0;
+	margin: 0;
+}
 /* ====================================================
             header top
 ======================================================*/
@@ -108,6 +111,7 @@ a{
 	transition: all 0.3s ease;
 	opacity:0;
 	visibility: hidden;
+	z-index: 11111;
 }
 @media(min-width: 992px){
 .menu > .menu-item-has-children:hover > .sub-menu{
@@ -349,4 +353,131 @@ a{
 
 main{
 	background-color: #000;
+	height: 500px;
+}
+
+
+
+
+
+
+/* ===========================================
+			footer
+============================================*/
+#footer{
+	background-color: #000033;
+	padding-top: 30px;
+}
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-input {
+    display: flex;
+    align-items: center;
+}
+.footer-search-box-group{
+	position: relative;
+}
+.footer-search-btn{
+	width: 30px;
+	height: 30px;
+	background-color: #FFCA00;
+	border: none;
+	position: absolute;
+	right: 0;
+	margin-top: 5px;
+	margin-right: 7px;
+	border-radius: 25px;
+}
+.footer-search-box{
+	height: 40px;
+	border: none;
+	border-radius: 25px;
+	padding: 2px 10px 2px 16px;
+	display: inline-block;
+    width: 300px;
+}
+.footer-search-box:focus{
+	outline: none;
+}
+.mr-sm{
+	margin-right: 15px;
+}
+hr{
+	border: 1px solid #ccc;
+}
+
+
+.post-list {
+    display: flex;
+    align-items: center;
+	margin-top: 10px;
+}
+.footer-post-thumbnail img {
+    height: 40px;
+}
+p.footer-post-text {
+    font-size: 14px;
+    color: #FFF;
+}
+.footer-post-info{
+	margin-left: 8px;
+}
+.mb-md{
+	margin-bottom: 25px;
+}
+.mt-md{
+	margin-top: 40px;
+}
+.footer-copy-right-text{
+	padding: 20px 0;
+}
+
+.footer-link{
+	font-size: 14px;
+	color: #FFF;
+}
+.footer-link:hover,
+.footer-link:active{
+	color: #FFCA00;
+}
+
+@media only screen and (max-width:1068px){
+	.footer-top {
+		flex-direction: column;
+	}
+}
+@media only screen and (max-width:991px){
+	.footer-top {
+		flex-direction: column;
+	}
+
+	.footer-title{
+		margin-top: 30px;
+	}
+}
+@media only screen and (max-width:768px){
+	.footer-top {
+		flex-direction: column;
+	}
+	.footer-input {
+		flex-direction: column;
+		margin-top: 10px;
+	}
+	.footer-search-box-group {
+		margin-top: 10px;
+	}
+	.footer-search-box {
+		width: 350px;
+	}
+}
+@media only screen and (max-width:425px){
+	.footer-search-box {
+		width: 300px;
+	}
+	.footer-logo img {
+		height: 50px;
+	}
 }
