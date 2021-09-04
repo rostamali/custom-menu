@@ -480,4 +480,7 @@ p.footer-post-text {
 	.footer-logo img {
 		height: 50px;
 	}
+	.footer-copy-right-text{
+		padding: 20px 2%;
+	}
 }
