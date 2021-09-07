@@ -228,11 +228,6 @@ main{
 	height: 500px;
 }
 
-
-
-
-
-
 /* ===========================================
 			footer
 ============================================*/
@@ -281,7 +276,9 @@ hr{
 	border: 1px solid #ccc;
 }
 
-
+.footer-post-thumbnail img {
+    height: 40px;
+}
 .post-list {
     display: flex;
     align-items: center;
